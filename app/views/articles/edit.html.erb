@@ -1,0 +1,22 @@
+<h1>Edit this Article</h1>
+
+<%= form_with model: @article do |form| %>
+    <div>
+      <%= form.label :page %><br>
+      <%= form.text_field :page %>
+    </div>
+  
+    <div>
+      <%= form.label :paragraph %><br>
+      <%= form.text_area :paragraph %>
+    </div>
+
+    <div>
+      <%= form.label :rank %><br>
+      <%= form.number_field :rank %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
